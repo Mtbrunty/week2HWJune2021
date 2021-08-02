@@ -1,0 +1,128 @@
+body {
+  background-color: rgb(97, 55, 1);
+}
+h1 {
+  border: 10px gold double;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  color: gold;
+  background-color: rgb(97, 55, 1);
+}
+#window {
+          border: 1px solid;
+          width: 400px;
+          height: 400px;
+          margin: 0 auto;
+          overflow: hidden;
+        }
+
+        #slider {
+          display: flex;
+          height: 400px;
+          width: 400px;
+          animation: beer 15s ease-in-out none infinite alternate;
+          }
+
+          @keyframes beer {
+            0% {
+              transform: translateX(0px);
+            }
+            20% {
+              transform: translateX(0px);
+            }
+            22% {
+              transform: translateX(-400px);
+            }
+            42% {
+              transform: translateX(-400px);
+            }
+            44% {
+              transform: translateX(-800px);
+            }
+            64% {
+              transform: translateX(-800px);
+            }
+            66% {
+              transform: translateX(-1200px);
+            }
+            86% {
+              transform: translateX(-1200px);
+            }
+            88% {transform: translateX(-1600px);}
+            100% {
+              transform: translateX(-1600px)
+            }
+          }
+
+        #window1 {
+          border: 1px solid;
+          width: 400px;
+          height: 400px;
+          margin: 0 auto;
+          overflow: hidden;
+          position: relative;
+        }
+
+        #slider1 {
+          display: flex;
+          height: 400px;
+          width: 400px;
+        }
+        
+        #menu {
+          flex-direction: column;
+          height: 400px;
+          width: 200px;
+          position: absolute;
+          top: 100px;
+          left: 0px ;
+          color: gold;
+          font-size: 24px;
+        }
+
+        #gluten_free {
+          border: solid transparent;
+          height: 400px;
+          width: 200px;
+          position: relative;
+          top: 110px;
+          right: 0px ;
+          color: gold;
+          font-size: 24px;
+        }
+        .button {
+            height: 50px;
+            width: 50px;
+            margin: 0 auto;
+            background-image: url(./images/cheers.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+        }
+
+        .left {
+          border-radius: 100% 0% 0% 100%;
+          border-color: rgb(97, 55, 1);
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 0px;
+
+        }
+
+        .right {
+          border-radius: 0% 100% 100% 0%;
+          border-color: rgb(97, 55, 1);
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 0px;
+
+      }
+
+        img {
+            height: auto;
+            width: 400px;
+        }
